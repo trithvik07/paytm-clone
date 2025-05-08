@@ -17,7 +17,7 @@ const Signin = () => {
     try {
       setLoading(true);
       const result = await axios.post(
-        "https://paytm-clone-backend.vercel.app/api/v1/user/signin",
+        "http://192.168.49.2:30001/api/v1/user/signin",
         details
       );
       localStorage.setItem("token", result.data.token);
